@@ -19,13 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"gandipeng.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="article">
+    <meta name="description" content="今天看见uu远程的赏金猎人活动，突发奇想试试这个。便让ai帮我配置虚拟机，想着开始着手寻找uu的安全漏洞。现实终究是骨感的，配置这一块花了我很长时间，cc+ds的组合还是弱了些，一直解决不了虚拟机的网卡以及vm tool的安装。实际上我知道可以去查教程解决，但我就是想测试各个ai不同的能力。最终是codex花了更短的时间完美找出并解决了问题。也可能是因为codex获得的权限高于cc，codex拥有">
+<meta property="og:type" content="article">
 <meta property="og:title" content="虚拟机">
 <meta property="og:url" content="https://gandipeng.github.io/2026/05/09/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="今天看见uu远程的赏金猎人活动，突发奇想试试这个。便让ai帮我配置虚拟机，想着开始着手寻找uu的安全漏洞。现实终究是骨感的，配置这一块花了我很长时间，cc+ds的组合还是弱了些，一直解决不了虚拟机的网卡以及vm tool的安装。实际上我知道可以去查教程解决，但我就是想测试各个ai不同的能力。最终是codex花了更短的时间完美找出并解决了问题。也可能是因为codex获得的权限高于cc，codex拥有">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-05-09T14:03:11.000Z">
-<meta property="article:modified_time" content="2026-05-09T14:03:11.569Z">
+<meta property="article:modified_time" content="2026-05-10T03:38:59.904Z">
 <meta property="article:author" content="秋刚好">
 <meta name="twitter:card" content="summary">
 
@@ -206,6 +208,13 @@
 
       <time title="Created: 2026-05-09 22:03:11" itemprop="dateCreated datePublished" datetime="2026-05-09T22:03:11+08:00">2026-05-09</time>
     </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-05-10 11:38:59" itemprop="dateModified" datetime="2026-05-10T11:38:59+08:00">2026-05-10</time>
+    </span>
 
   
 </div>
@@ -216,7 +225,8 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody"><p>今天看见uu远程的赏金猎人活动，突发奇想试试这个。便让ai帮我配置虚拟机，想着开始着手寻找uu的安全漏洞。现实终究是骨感的，配置这一块花了我很长时间，cc+ds的组合还是弱了些，一直解决不了虚拟机的网卡以及vm tool的安装。实际上我知道可以去查教程解决，但我就是想测试各个ai不同的能力。最终是codex花了更短的时间完美找出并解决了问题。<br>也可能是因为codex获得的权限高于cc，codex拥有完全权限，它可以任意调用powershell，而cc总是遇到权限问题调用失败，还需要我变成yes程序员···不过ds用不到1&#x2F;10的价格实现了70~80%的性能，我也不敢奢求更多，以及很满意了。<br>最终问题出在vm的服务是关闭的状态（是我有点蠢了）。顺手让codex写了个py脚本，可以一键打开或者关闭vm的服务。<br>或许这才是ai的意义所在，我并没有学习过python，更不知道vm的各种服务接口。如果让我去修习脚本的写法，去文档查找服务接口，可能需要小半个星期才能照葫芦画瓢出来一个简陋的脚本，而ai只花了1m4s就在我的桌面上生成了这个脚本，顺带完成了测试与运行。<br>说起来这是第一个专属于我的脚本或者程序，还是蛮开心的。<br>后续还是配置环境，wireshark之前计网上课的时候安装过了，今天却是不能用了。修复环境问题又要了好一会。今天终归没能开始安全测试环节。效率还是有待提高</p>
+
     </div>
 
     
